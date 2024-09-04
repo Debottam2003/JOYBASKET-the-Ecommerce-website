@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+}
+.body1, .body2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1px;
+    text-shadow: 1.1px 1.1px 5px rgba(66, 3, 110, 0.6);
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(236, 220, 247);
+}
+.cart {
+    border: none;
+    color: #0a0906;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    display: grid;
+}
+.cart:hover {
+    border: 1px solid black;
+}
+#cart {
+    border: none;
+}
+.area {
+    display: none;
+    position: absolute;
+    right: 0;
+    margin: 1rem;
+    background: linear-gradient(to bottom, rgb(202, 179, 245), rgb(116, 63, 221));
+    width: 400px;
+    height: 600px;
+    color: rgb(15, 4, 1);
+    box-shadow: 3px 3px 3px rgb(1, 2, 88);
+    text-align: center;
+    font-style: oblique;
+    z-index: 999;
+    border: 3px solid white;
+    border-radius: 5px;
+    overflow: auto;
+}
+#cart_text {
+    font-size: larger;
+    text-align: center;
+}
+.cart_button {
+    background-color: rgb(236, 220, 247);
+    border: none;
+}
+.add-to-cart {
+    border: none;
+    width: 5rem;
+    height: 2.5rem;
+    font-size: small;
+    color: white;
+    background-color: rgb(7, 50, 143);
+    box-shadow: 2px 3px 3px black;
+    border-radius: 3px;
+    font: bold;
+    text-align: center;
+}
+.add-to-cart:hover {
+    background-color: rgb(108, 108, 189);
+}
+.box1, .box2, .box3, .box4 {
+    background-color: white;
+    margin-top: 1rem;
+}
+.box1 { height: 350px; width: 300px; }
+.box2 { height: 400px; width: 350px; }
+.box3 { height: 400px; width: 250px; }
+.box4 { height: 350px; width: 300px; }
+h3 {
+    margin-left: 1rem;
+    margin-top: 0.1rem;
+    color: rgb(1, 1, 39);
+    text-shadow: 1px 1px 1px rgb(82, 113, 251);
+}
+.f {
+    display: flex;
+    justify-content: center;
+}
+.box1_img, .box2_img, .box3_img, .box4_img {
+    background-size: cover;
+    padding: 10px 0px 1px;
+    margin: 1rem;
+}
+.box1_img { width: 250px; height: 250px; background-image: url("tv.jpg"); }
+.box2_img { width: 300px; height: 325px; background-image: url("iphone.jpg"); }
+.box3_img { width: 337px; height: 250px; background-image: url("laptop.jpg"); }
+.box4_img { width: 300px; height: 230px; background-image: url("camera.jpg"); }
+#box1_img:hover {
+    transform: scale(1.15);
+    opacity: 0.5;
+}
+.cart .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.item img {
+    width: 50px;
+    height: 50px;
+}
+.quantity span {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+}
